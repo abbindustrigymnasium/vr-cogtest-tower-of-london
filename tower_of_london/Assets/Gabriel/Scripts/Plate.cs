@@ -84,5 +84,10 @@ public class Plate : MonoBehaviour
 
         }
     }
+    private void OnTriggerEnter(Collider other) {
+        if (other.gameObject.CompareTag("TowerCollider")) {
+            Debug.Log("Entered");
+        }
+    }
 
 }
