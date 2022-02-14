@@ -21,10 +21,12 @@ public class Plate : MonoBehaviour
     public Size size { get { return _size; } }
     public bool isOnTop { get { return _isOnTop; } }
 
+    [SerializeField]
     private Colour _colour;
+    [SerializeField]
     private Size _size;
+    [SerializeField]
     private bool _isOnTop;
-    
     private void Start()
     {
         string plateName = gameObject.name;
@@ -40,7 +42,6 @@ public class Plate : MonoBehaviour
         {
             _colour = Colour.Dark;
             _size = Size.Large;
-
         }
         else if (plateType  == "PlateLargeSilver")
         {
