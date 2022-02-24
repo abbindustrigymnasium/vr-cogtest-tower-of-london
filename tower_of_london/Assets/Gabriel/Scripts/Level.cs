@@ -9,6 +9,4 @@ public class Level
     public int trialDurationMs;
     public Peg[] pegs;
 
-    //public int levelNo;
-    //public int difficulty;
 }

@@ -6,9 +6,9 @@
           {
             "tower": "Tower1",
             "disks": [
-              { "color": "dark", "size": 3 },
-              { "color": "silver", "size": 2 },
-              { "color": "orange", "size": 1 }
+              { "color": "Dark", "size": 1 },
+              { "color": "Silver", "size": 2 },
+              { "color": "Orange", "size": 3 }
             ],
             "goal": []
           },
@@ -21,9 +21,9 @@
             "tower": "Tower3",
             "disks": [],
             "goal": [
-              { "color": "dark", "size": 3 },
-              { "color": "silver", "size": 2 },
-              { "color": "orange", "size": 1 }
+              { "color": "Dark", "size": 1 },
+              { "color": "Silver", "size": 2 },
+              { "color": "Orange", "size": 3 }
             ]
           }
         ]
@@ -35,19 +35,19 @@
             "tower": "Tower1",
             "disks": [],
             "goal": [
-              { "color": "orange", "size": 3 },
-              { "color": "dark", "size": 2 },
-              { "color": "silver", "size": 1 }
+              { "color": "Orange", "size": 1 },
+              { "color": "Dark", "size": 2 },
+              { "color": "Silver", "size": 3 }
             ]
           },
           {
             "tower": "Tower2",
-            "disks": [{ "color": "orange", "size": 3 }, { "color": "dark", "size": 2 }],
+            "disks": [{ "color": "Orange", "size": 1 }, { "color": "Dark", "size": 2 }],
             "goal": []
           },
           {
             "tower": "Tower3",
-            "disks": [{ "color": "silver", "size": 1 }],
+            "disks": [{ "color": "Silver", "size": 3 }],
             "goal": []
           }
         ]
@@ -57,17 +57,17 @@
         "pegs": [
           {
             "tower": "Tower1",
-            "disks": [{ "color": "orange", "size": 2 }],
-            "goal": [{ "color": "silver", "size": 3 }]
+            "disks": [{ "color": "Orange", "size": 2 }],
+            "goal": [{ "color": "Silver", "size": 1 }]
           },
           {
             "tower": "Tower2",
-            "disks": [{ "color": "silver", "size": 3 }],
-            "goal": [{ "color": "orange", "size": 2 }, { "color": "dark", "size": 1 }]
+            "disks": [{ "color": "Silver", "size": 1 }],
+            "goal": [{ "color": "Orange", "size": 2 }, { "color": "Dark", "size": 3 }]
           },
           {
             "tower": "Tower3",
-            "disks": [{ "color": "dark", "size": 1 }],
+            "disks": [{ "color": "Dark", "size": 3 }],
             "goal": []
           }
         ]
@@ -78,11 +78,11 @@
           {
             "tower": "Tower1",
             "disks": [
-              { "color": "dark", "size": 3 },
-              { "color": "orange", "size": 3 },
-              { "color": "silver", "size": 2 }
+              { "color": "Dark", "size": 1 },
+              { "color": "Orange", "size": 1 },
+              { "color": "Silver", "size": 2 }
             ],
-            "goal": [{ "color": "orange", "size": 3 }]
+            "goal": [{ "color": "Orange", "size": 1 }]
           },
           {
             "tower": "Tower2",
@@ -91,11 +91,11 @@
           },
           {
             "tower": "Tower3",
-            "disks": [{ "color": "dark", "size": 1 }],
+            "disks": [{ "color": "Dark", "size": 3 }],
             "goal": [
-              { "color": "dark", "size": 3 },
-              { "color": "silver", "size": 2 },
-              { "color": "dark", "size": 1 }
+              { "color": "Dark", "size": 1 },
+              { "color": "Silver", "size": 2 },
+              { "color": "Dark", "size": 3 }
             ]
           }
         ]
@@ -105,21 +105,21 @@
         "pegs": [
           {
             "tower": "Tower1",
-            "disks": [{ "color": "dark", "size": 1 }],
+            "disks": [{ "color": "Dark", "size": 3 }],
             "goal": [
-              { "color": "orange", "size": 3 },
-              { "color": "dark", "size": 2 },
-              { "color": "dark", "size": 1 }
+              { "color": "Orange", "size": 1 },
+              { "color": "Dark", "size": 2 },
+              { "color": "Dark", "size": 3 }
             ]
           },
           {
             "tower": "Tower2",
-            "disks": [{ "color": "orange", "size": 3 }, { "color": "silver", "size": 2 }],
-            "goal": [{ "color": "silver", "size": 2 }]
+            "disks": [{ "color": "Orange", "size": 1 }, { "color": "Silver", "size": 2 }],
+            "goal": [{ "color": "Silver", "size": 2 }]
           },
           {
             "tower": "Tower3",
-            "disks": [{ "color": "dark", "size": 2 }],
+            "disks": [{ "color": "Dark", "size": 2 }],
             "goal": []
           }
         ]
@@ -131,20 +131,20 @@
             "tower": "Tower1",
             "disks": [],
             "goal": [
-              { "color": "silver", "size": 3 },
-              { "color": "silver", "size": 2 },
-              { "color": "orange", "size": 1 }
+              { "color": "Silver", "size": 1 },
+              { "color": "Silver", "size": 2 },
+              { "color": "Orange", "size": 3 }
             ]
           },
           {
             "tower": "Tower2",
-            "disks": [{ "color": "silver", "size": 3 }, { "color": "orange", "size": 1 }],
+            "disks": [{ "color": "Silver", "size": 1 }, { "color": "Orange", "size": 3 }],
             "goal": []
           },
           {
             "tower": "Tower3",
-            "disks": [{ "color": "silver", "size": 2 }, { "color": "dark", "size": 1 }],
-            "goal": [{ "color": "dark", "size": 1 }]
+            "disks": [{ "color": "Silver", "size": 2 }, { "color": "Dark", "size": 3 }],
+            "goal": [{ "color": "Dark", "size": 3 }]
           }
         ]
       },
@@ -154,20 +154,20 @@
           {
             "tower": "Tower1",
             "disks": [
-              { "color": "silver", "size": 3 },
-              { "color": "dark", "size": 2 },
-              { "color": "silver", "size": 2 }
+              { "color": "Silver", "size": 1 },
+              { "color": "Dark", "size": 2 },
+              { "color": "Silver", "size": 2 }
             ],
-            "goal": [{ "color": "orange", "size": 1 }]
+            "goal": [{ "color": "Orange", "size": 3 }]
           },
           {
             "tower": "Tower2",
-            "disks": [{ "color": "dark", "size": 3 }, { "color": "orange", "size": 1 }],
+            "disks": [{ "color": "Dark", "size": 1 }, { "color": "Orange", "size": 3 }],
             "goal": [
-              { "color": "silver", "size": 3 },
-              { "color": "dark", "size": 3 },
-              { "color": "silver", "size": 2 },
-              { "color": "dark", "size": 2 }
+              { "color": "Silver", "size": 1 },
+              { "color": "Dark", "size": 1 },
+              { "color": "Silver", "size": 2 },
+              { "color": "Dark", "size": 2 }
             ]
           },
           {
@@ -182,22 +182,22 @@
         "pegs": [
           {
             "tower": "Tower1",
-            "disks": [{ "color": "silver", "size": 2 }, { "color": "orange", "size": 2 }],
+            "disks": [{ "color": "Silver", "size": 2 }, { "color": "Orange", "size": 2 }],
             "goal": [
-              { "color": "orange", "size": 3 },
-              { "color": "silver", "size": 3 },
-              { "color": "silver", "size": 2 }
+              { "color": "Orange", "size": 1 },
+              { "color": "Silver", "size": 1 },
+              { "color": "Silver", "size": 2 }
             ]
           },
           {
             "tower": "Tower2",
-            "disks": [{ "color": "orange", "size": 3 }],
+            "disks": [{ "color": "Orange", "size": 1 }],
             "goal": []
           },
           {
             "tower": "Tower3",
-            "disks": [{ "color": "silver", "size": 3 }, { "color": "dark", "size": 1 }],
-            "goal": [{ "color": "orange", "size": 2 }, { "color": "dark", "size": 1 }]
+            "disks": [{ "color": "Silver", "size": 1 }, { "color": "Dark", "size": 3 }],
+            "goal": [{ "color": "Orange", "size": 2 }, { "color": "Dark", "size": 3 }]
           }
         ]
       },
@@ -206,21 +206,21 @@
         "pegs": [
           {
             "tower": "Tower1",
-            "disks": [{ "color": "silver", "size": 2 }, { "color": "orange", "size": 1 }],
-            "goal": [{ "color": "silver", "size": 3 }, { "color": "silver", "size": 2 }]
+            "disks": [{ "color": "Silver", "size": 2 }, { "color": "Orange", "size": 3 }],
+            "goal": [{ "color": "Silver", "size": 1 }, { "color": "Silver", "size": 2 }]
           },
           {
             "tower": "Tower2",
-            "disks": [{ "color": "dark", "size": 3 }],
+            "disks": [{ "color": "Dark", "size": 1 }],
             "goal": []
           },
           {
             "tower": "Tower3",
-            "disks": [{ "color": "silver", "size": 3 }, { "color": "orange", "size": 2 }],
+            "disks": [{ "color": "Silver", "size": 1 }, { "color": "Orange", "size": 2 }],
             "goal": [
-              { "color": "dark", "size": 3 },
-              { "color": "orange", "size": 2 },
-              { "color": "orange", "size": 1 }
+              { "color": "Dark", "size": 1 },
+              { "color": "Orange", "size": 2 },
+              { "color": "Orange", "size": 3 }
             ]
           }
         ]
@@ -231,21 +231,21 @@
         "pegs": [
           {
             "tower": "Tower1",
-            "disks": [{ "color": "silver", "size": 2 }, { "color": "orange", "size": 1 }],
+            "disks": [{ "color": "Silver", "size": 2 }, { "color": "Orange", "size": 3 }],
             "goal": []
           },
           {
             "tower": "Tower2",
-            "disks": [{ "color": "dark", "size": 3 }, { "color": "silver", "size": 3 }],
-            "goal": [{ "color": "dark", "size": 2 }, { "color": "silver", "size": 2 }]
+            "disks": [{ "color": "Dark", "size": 1 }, { "color": "Silver", "size": 1 }],
+            "goal": [{ "color": "Dark", "size": 2 }, { "color": "Silver", "size": 2 }]
           },
           {
             "tower": "Tower3",
-            "disks": [{ "color": "dark", "size": 2 }],
+            "disks": [{ "color": "Dark", "size": 2 }],
             "goal": [
-              { "color": "silver", "size": 3 },
-              { "color": "dark", "size": 3 },
-              { "color": "orange", "size": 1 }
+              { "color": "Silver", "size": 1 },
+              { "color": "Dark", "size": 1 },
+              { "color": "Orange", "size": 3 }
             ]
           }
         ]
@@ -256,22 +256,22 @@
         "pegs": [
           {
             "tower": "Tower1",
-            "disks": [{ "color": "silver", "size": 3 }, { "color": "dark", "size": 1 }],
-            "goal": [{ "color": "silver", "size": 2 }]
+            "disks": [{ "color": "Silver", "size": 1 }, { "color": "Dark", "size": 3 }],
+            "goal": [{ "color": "Silver", "size": 2 }]
           },
           {
             "tower": "Tower2",
             "disks": [],
-            "goal": [{ "color": "silver", "size": 3 }, { "color": "orange", "size": 2 }]
+            "goal": [{ "color": "Silver", "size": 1 }, { "color": "Orange", "size": 2 }]
           },
           {
             "tower": "Tower3",
             "disks": [
-              { "color": "orange", "size": 3 },
-              { "color": "silver", "size": 2 },
-              { "color": "orange", "size": 2 }
+              { "color": "Orange", "size": 1 },
+              { "color": "Silver", "size": 2 },
+              { "color": "Orange", "size": 2 }
             ],
-            "goal": [{ "color": "orange", "size": 3 }, { "color": "dark", "size": 1 }]
+            "goal": [{ "color": "Orange", "size": 1 }, { "color": "Dark", "size": 3 }]
           }
         ]
       },
@@ -281,18 +281,18 @@
         "pegs": [
           {
             "tower": "Tower1",
-            "disks": [{ "color": "dark", "size": 3 }, { "color": "orange", "size": 2 }],
-            "goal": [{ "color": "silver", "size": 2 }, { "color": "orange", "size": 1 }]
+            "disks": [{ "color": "Dark", "size": 1 }, { "color": "Orange", "size": 2 }],
+            "goal": [{ "color": "Silver", "size": 2 }, { "color": "Orange", "size": 3 }]
           },
           {
             "tower": "Tower2",
-            "disks": [{ "color": "silver", "size": 3 }, { "color": "orange", "size": 1 }],
-            "goal": [{ "color": "dark", "size": 3 }, { "color": "orange", "size": 2 }]
+            "disks": [{ "color": "Silver", "size": 1 }, { "color": "Orange", "size": 3 }],
+            "goal": [{ "color": "Dark", "size": 1 }, { "color": "Orange", "size": 2 }]
           },
           {
             "tower": "Tower3",
-            "disks": [{ "color": "silver", "size": 2 }],
-            "goal": [{ "color": "silver", "size": 3 }]
+            "disks": [{ "color": "Silver", "size": 2 }],
+            "goal": [{ "color": "Silver", "size": 1 }]
           }
         ]
       }
@@ -302,8 +302,8 @@
         "pegs": [
           {
             "tower": "Tower1",
-            "disks": [{ "color": "silver", "size": 3 }, { "color": "dark", "size": 1 }],
-            "goal": [{ "color": "silver", "size": 3 }]
+            "disks": [{ "color": "Silver", "size": 1 }, { "color": "Dark", "size": 3 }],
+            "goal": [{ "color": "Silver", "size": 1 }]
           },
           {
             "tower": "Tower2",
@@ -312,8 +312,8 @@
           },
           {
             "tower": "Tower3",
-            "disks": [{ "color": "dark", "size": 3 }],
-            "goal": [{ "color": "dark", "size": 3 }, { "color": "dark", "size": 1 }]
+            "disks": [{ "color": "Dark", "size": 1 }],
+            "goal": [{ "color": "Dark", "size": 1 }, { "color": "Dark", "size": 3 }]
           }
         ]
       },
@@ -321,8 +321,8 @@
         "pegs": [
           {
             "tower": "Tower1",
-            "disks": [{ "color": "silver", "size": 3 }, { "color": "dark", "size": 1 }],
-            "goal": [{ "color": "silver", "size": 3 }, { "color": "orange", "size": 1 }]
+            "disks": [{ "color": "Silver", "size": 1 }, { "color": "Dark", "size": 3 }],
+            "goal": [{ "color": "Silver", "size": 1 }, { "color": "Orange", "size": 3 }]
           },
           {
             "tower": "Tower2",
@@ -331,8 +331,8 @@
           },
           {
             "tower": "Tower3",
-            "disks": [{ "color": "dark", "size": 3 }, { "color": "orange", "size": 1 }],
-            "goal": [{ "color": "dark", "size": 3 }, { "color": "dark", "size": 1 }]
+            "disks": [{ "color": "Dark", "size": 1 }, { "color": "Orange", "size": 3 }],
+            "goal": [{ "color": "Dark", "size": 1 }, { "color": "Dark", "size": 3 }]
           }
         ]
       }

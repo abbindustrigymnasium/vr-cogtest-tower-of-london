@@ -5,7 +5,7 @@ using UnityEngine;
 [System.Serializable]
 public class Disk
 {
-    public string Color;
+    public string color;
     public int size;
 
 }
