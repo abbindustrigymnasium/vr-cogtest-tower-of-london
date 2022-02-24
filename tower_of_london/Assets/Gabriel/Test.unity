@@ -352,6 +352,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlatesOnTower: []
+  goal: []
 --- !u!65 &687345378
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -413,6 +414,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlatesOnTower: []
+  goal: []
 --- !u!65 &995522004
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -755,6 +757,7 @@ MonoBehaviour:
   - {fileID: 4313111132228006425, guid: ca1dfb9a547bf6f4ab05e3246e93ab0e, type: 3}
   - {fileID: 4313111132228006425, guid: d4121adb707628f46b3de21aace5b7dd, type: 3}
   - {fileID: 4313111132228006425, guid: ce508556438301b419fb48b28510c8b7, type: 3}
+  levelsFile: {fileID: 4900000, guid: 7022477e9b1c5404783816af10c5a9ca, type: 3}
 --- !u!4 &1511136349
 Transform:
   m_ObjectHideFlags: 0
@@ -821,6 +824,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlatesOnTower: []
+  goal: []
 --- !u!65 &1631750422
 BoxCollider:
   m_ObjectHideFlags: 0

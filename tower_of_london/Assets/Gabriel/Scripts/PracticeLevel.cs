@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class Pegs : MonoBehaviour
+public class PracticeLevels
 {
-    public Peg[] pegs;
+    public Level[] levels;
 }

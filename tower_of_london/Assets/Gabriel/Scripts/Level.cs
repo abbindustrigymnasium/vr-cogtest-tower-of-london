@@ -3,8 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class Level : MonoBehaviour
+public class Level
 {
+    public bool disallowSameColor;
     public int trialDurationMs;
-    //public Pegs[]
+    public Peg[] pegs;
+
+    //public int levelNo;
+    //public int difficulty;
 }

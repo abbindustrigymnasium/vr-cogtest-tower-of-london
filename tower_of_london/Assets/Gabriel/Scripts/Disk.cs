@@ -3,17 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class Disk : MonoBehaviour
+public class Disk
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public string Color;
+    public int size;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

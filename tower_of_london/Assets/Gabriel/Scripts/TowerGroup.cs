@@ -20,7 +20,10 @@ public class TowerGroup : MonoBehaviour
 
     #region Public serializable variables
     public GameObject[] platePrefabs;
-    public TextAsset levelsFile; 
+    public TextAsset levelsFile;
+
+    public Levels levelsInJson;
+    public Levels testLevelsInJson;
     #endregion
 
     #region Private variables
@@ -28,7 +31,8 @@ public class TowerGroup : MonoBehaviour
 
     void Start()
     {
-        //Levels levelsInJson = JsonUtility.FromJson<Levels>(levelsFile.text);
+        levelsInJson = JsonUtility.FromJson<Levels>(levelsFile.text);
+        testLevelsInJson = JsonUtility.FromJson<Levels>(levelsFile.text);
 
         SpawnPlates();
     }

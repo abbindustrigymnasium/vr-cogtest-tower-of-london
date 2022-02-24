@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class Levels : MonoBehaviour
+public class Levels
 {
     public Level[] levels;
 }
