@@ -134,7 +134,6 @@ GameObject:
   - component: {fileID: 183955295}
   - component: {fileID: 183955298}
   - component: {fileID: 183955297}
-  - component: {fileID: 183955296}
   m_Layer: 0
   m_Name: Pole
   m_TagString: Untagged
@@ -157,20 +156,6 @@ Transform:
   m_Father: {fileID: 995522002}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &183955296
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 183955294}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!23 &183955297
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -328,9 +313,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 687345376}
+  - component: {fileID: 687345377}
+  - component: {fileID: 687345378}
   m_Layer: 0
   m_Name: Tower2
-  m_TagString: Untagged
+  m_TagString: TowerCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -343,7 +330,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 687345375}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -352,6 +339,32 @@ Transform:
   m_Father: {fileID: 1511136349}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &687345377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 687345375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 074eb39832543a64c8ffca1f6fba279b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlatesOnTower: []
+--- !u!65 &687345378
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 687345375}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 3, z: 2}
+  m_Center: {x: 0, y: 1.4, z: 0}
 --- !u!1 &995522001
 GameObject:
   m_ObjectHideFlags: 0
@@ -361,9 +374,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 995522002}
+  - component: {fileID: 995522003}
+  - component: {fileID: 995522004}
   m_Layer: 0
   m_Name: Tower1
-  m_TagString: Untagged
+  m_TagString: TowerCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -376,7 +391,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 995522001}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -4, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -385,6 +400,32 @@ Transform:
   m_Father: {fileID: 1511136349}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &995522003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 995522001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 074eb39832543a64c8ffca1f6fba279b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlatesOnTower: []
+--- !u!65 &995522004
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 995522001}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 3, z: 2}
+  m_Center: {x: 0, y: 1.4, z: 0}
 --- !u!1 &1041942729
 GameObject:
   m_ObjectHideFlags: 0
@@ -704,7 +745,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cec17af98e0a1944681f9eda3941c569, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPos: {fileID: 1926723951}
   platePrefabs:
   - {fileID: 6636267725967709049, guid: ca45efcce749d8a4aad6dbd8e0ae2eb9, type: 3}
   - {fileID: 6636267725967709049, guid: 71d948a20dfeb844d8a08b330d2b6af7, type: 3}
@@ -715,7 +755,6 @@ MonoBehaviour:
   - {fileID: 4313111132228006425, guid: ca1dfb9a547bf6f4ab05e3246e93ab0e, type: 3}
   - {fileID: 4313111132228006425, guid: d4121adb707628f46b3de21aace5b7dd, type: 3}
   - {fileID: 4313111132228006425, guid: ce508556438301b419fb48b28510c8b7, type: 3}
-  formation: 0
 --- !u!4 &1511136349
 Transform:
   m_ObjectHideFlags: 0
@@ -743,9 +782,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1631750420}
+  - component: {fileID: 1631750421}
+  - component: {fileID: 1631750422}
   m_Layer: 0
   m_Name: Tower3
-  m_TagString: Untagged
+  m_TagString: TowerCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -767,6 +808,32 @@ Transform:
   m_Father: {fileID: 1511136349}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1631750421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1631750419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 074eb39832543a64c8ffca1f6fba279b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlatesOnTower: []
+--- !u!65 &1631750422
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1631750419}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 3, z: 2}
+  m_Center: {x: 0, y: 1.4, z: 0}
 --- !u!1 &1648504671
 GameObject:
   m_ObjectHideFlags: 0

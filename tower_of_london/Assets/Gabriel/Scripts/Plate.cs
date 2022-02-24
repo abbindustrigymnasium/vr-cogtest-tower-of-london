@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Plate : MonoBehaviour
 {
+    #region Public non-serializable variables. 
     public enum Colour
     {
         Orange,
@@ -16,10 +17,15 @@ public class Plate : MonoBehaviour
         Medium,
         Large
     }
+    #endregion
 
+    #region Serializable props
     public Colour colour { get { return _colour; } }
     public Size size { get { return _size; } }
-    public bool isOnTop { get { return _isOnTop; } }
+    public bool isOnTop { get { return _isOnTop; }  set {
+            _isOnTop = value;
+            gameObject.GetComponent<Rigidbody>().isKinematic = !value;
+        } }
 
     [SerializeField]
     private Colour _colour;
@@ -27,6 +33,13 @@ public class Plate : MonoBehaviour
     private Size _size;
     [SerializeField]
     private bool _isOnTop;
+    #endregion
+
+    #region Private variables
+    private string Tower;
+    #endregion
+
+
     private void Start()
     {
         string plateName = gameObject.name;
@@ -84,27 +97,13 @@ public class Plate : MonoBehaviour
 
         }
     }
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.CompareTag("TowerCollider"))
+    private void OnTriggerEnter(Collider other) {
+        if (other.gameObject.CompareTag("TowerCollider") && other.transform.name != gameObject.transform.parent.name) 
         {
-            Debug.Log("Entered");
-            gameObject.transform.SetParent(other.transform, false);
-
-            //Vector3 position = gameObject.transform.position;
-            //gameObject.transform.Translate(new Vector3(0, 3, 0) * Time.deltaTime);
-            //transform.position = new Vector3(0, 1, 0);
-            //transform.SetPositionAndRotation(new Vector3(0, 3, 0), Quaternion.identity);
-            //gameObject.transform.localPosition = new Vector3(0, 3, 0);
-
-            //Vector3 pos = transform.position;
-            //pos.y = 3;
-            //transform.position = pos;
-
-
-
-
+            gameObject.transform.SetParent(other.transform, true);
+            gameObject.transform.localPosition = new Vector3(0, 3, 0);
         }
     }
+
 
 }

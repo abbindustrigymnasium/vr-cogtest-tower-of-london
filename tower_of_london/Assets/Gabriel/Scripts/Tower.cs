@@ -6,6 +6,8 @@ public class Tower : MonoBehaviour
 {
     //[System.NonSerialized]
     public List<Plate> PlatesOnTower = new List<Plate>();
+    //[System.NonSerialized]
+    public List<Plate> goal = new List<Plate>();
 
 
     void Start()
@@ -17,6 +19,9 @@ public class Tower : MonoBehaviour
     {
         if ((gameObject.transform.childCount - 2) > PlatesOnTower.Count && PlatesOnTower.Count != 0)
         {
+            Debug.Log(gameObject);
+            Debug.Log(PlatesOnTower.Count);
+
             PlatesOnTower[PlatesOnTower.Count - 1].isOnTop = false;
             PlatesOnTower.Add(gameObject.transform.GetChild(gameObject.transform.childCount - 1).GetComponent<Plate>());
             PlatesOnTower[PlatesOnTower.Count - 1].isOnTop = true;
@@ -24,9 +29,11 @@ public class Tower : MonoBehaviour
         }
         else if ((gameObject.transform.childCount - 2) < PlatesOnTower.Count)
         {
+            Debug.Log(gameObject);
+            Debug.Log(PlatesOnTower.Count);
             PlatesOnTower.RemoveAt(PlatesOnTower.Count - 1);
-            Debug.Log(PlatesOnTower[PlatesOnTower.Count - 1]);
-            PlatesOnTower[PlatesOnTower.Count].isOnTop = true;
+
+            PlatesOnTower[PlatesOnTower.Count - 1].isOnTop = true;
 
         }
     }

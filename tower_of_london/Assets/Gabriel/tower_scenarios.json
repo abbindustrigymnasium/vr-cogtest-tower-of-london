@@ -1,0 +1,340 @@
+{
+    "levels": [
+      {
+        "trialDurationMs": 60000,
+        "pegs": [
+          {
+            "name": "A",
+            "disks": [
+              { "color": "dark", "size": 3 },
+              { "color": "silver", "size": 2 },
+              { "color": "orange", "size": 1 }
+            ],
+            "goal": []
+          },
+          {
+            "name": "B",
+            "disks": [],
+            "goal": []
+          },
+          {
+            "name": "C",
+            "disks": [],
+            "goal": [
+              { "color": "dark", "size": 3 },
+              { "color": "silver", "size": 2 },
+              { "color": "orange", "size": 1 }
+            ]
+          }
+        ]
+      },
+      {
+        "trialDurationMs": 60000,
+        "pegs": [
+          {
+            "name": "A",
+            "disks": [],
+            "goal": [
+              { "color": "orange", "size": 3 },
+              { "color": "dark", "size": 2 },
+              { "color": "silver", "size": 1 }
+            ]
+          },
+          {
+            "name": "B",
+            "disks": [{ "color": "orange", "size": 3 }, { "color": "dark", "size": 2 }],
+            "goal": []
+          },
+          {
+            "name": "C",
+            "disks": [{ "color": "silver", "size": 1 }],
+            "goal": []
+          }
+        ]
+      },
+      {
+        "trialDurationMs": 60000,
+        "pegs": [
+          {
+            "name": "A",
+            "disks": [{ "color": "orange", "size": 2 }],
+            "goal": [{ "color": "silver", "size": 3 }]
+          },
+          {
+            "name": "B",
+            "disks": [{ "color": "silver", "size": 3 }],
+            "goal": [{ "color": "orange", "size": 2 }, { "color": "dark", "size": 1 }]
+          },
+          {
+            "name": "C",
+            "disks": [{ "color": "dark", "size": 1 }],
+            "goal": []
+          }
+        ]
+      },
+      {
+        "trialDurationMs": 60000,
+        "pegs": [
+          {
+            "name": "A",
+            "disks": [
+              { "color": "dark", "size": 3 },
+              { "color": "orange", "size": 3 },
+              { "color": "silver", "size": 2 }
+            ],
+            "goal": [{ "color": "orange", "size": 3 }]
+          },
+          {
+            "name": "B",
+            "disks": [],
+            "goal": []
+          },
+          {
+            "name": "C",
+            "disks": [{ "color": "dark", "size": 1 }],
+            "goal": [
+              { "color": "dark", "size": 3 },
+              { "color": "silver", "size": 2 },
+              { "color": "dark", "size": 1 }
+            ]
+          }
+        ]
+      },
+      {
+        "trialDurationMs": 60000,
+        "pegs": [
+          {
+            "name": "A",
+            "disks": [{ "color": "dark", "size": 1 }],
+            "goal": [
+              { "color": "orange", "size": 3 },
+              { "color": "dark", "size": 2 },
+              { "color": "dark", "size": 1 }
+            ]
+          },
+          {
+            "name": "B",
+            "disks": [{ "color": "orange", "size": 3 }, { "color": "silver", "size": 2 }],
+            "goal": [{ "color": "silver", "size": 2 }]
+          },
+          {
+            "name": "C",
+            "disks": [{ "color": "dark", "size": 2 }],
+            "goal": []
+          }
+        ]
+      },
+      {
+        "trialDurationMs": 60000,
+        "pegs": [
+          {
+            "name": "A",
+            "disks": [],
+            "goal": [
+              { "color": "silver", "size": 3 },
+              { "color": "silver", "size": 2 },
+              { "color": "orange", "size": 1 }
+            ]
+          },
+          {
+            "name": "B",
+            "disks": [{ "color": "silver", "size": 3 }, { "color": "orange", "size": 1 }],
+            "goal": []
+          },
+          {
+            "name": "C",
+            "disks": [{ "color": "silver", "size": 2 }, { "color": "dark", "size": 1 }],
+            "goal": [{ "color": "dark", "size": 1 }]
+          }
+        ]
+      },
+      {
+        "trialDurationMs": 60000,
+        "pegs": [
+          {
+            "name": "A",
+            "disks": [
+              { "color": "silver", "size": 3 },
+              { "color": "dark", "size": 2 },
+              { "color": "silver", "size": 2 }
+            ],
+            "goal": [{ "color": "orange", "size": 1 }]
+          },
+          {
+            "name": "B",
+            "disks": [{ "color": "dark", "size": 3 }, { "color": "orange", "size": 1 }],
+            "goal": [
+              { "color": "silver", "size": 3 },
+              { "color": "dark", "size": 3 },
+              { "color": "silver", "size": 2 },
+              { "color": "dark", "size": 2 }
+            ]
+          },
+          {
+            "name": "C",
+            "disks": [],
+            "goal": []
+          }
+        ]
+      },
+      {
+        "trialDurationMs": 60000,
+        "pegs": [
+          {
+            "name": "A",
+            "disks": [{ "color": "silver", "size": 2 }, { "color": "orange", "size": 2 }],
+            "goal": [
+              { "color": "orange", "size": 3 },
+              { "color": "silver", "size": 3 },
+              { "color": "silver", "size": 2 }
+            ]
+          },
+          {
+            "name": "B",
+            "disks": [{ "color": "orange", "size": 3 }],
+            "goal": []
+          },
+          {
+            "name": "C",
+            "disks": [{ "color": "silver", "size": 3 }, { "color": "dark", "size": 1 }],
+            "goal": [{ "color": "orange", "size": 2 }, { "color": "dark", "size": 1 }]
+          }
+        ]
+      },
+      {
+        "trialDurationMs": 60000,
+        "pegs": [
+          {
+            "name": "A",
+            "disks": [{ "color": "silver", "size": 2 }, { "color": "orange", "size": 1 }],
+            "goal": [{ "color": "silver", "size": 3 }, { "color": "silver", "size": 2 }]
+          },
+          {
+            "name": "B",
+            "disks": [{ "color": "dark", "size": 3 }],
+            "goal": []
+          },
+          {
+            "name": "C",
+            "disks": [{ "color": "silver", "size": 3 }, { "color": "orange", "size": 2 }],
+            "goal": [
+              { "color": "dark", "size": 3 },
+              { "color": "orange", "size": 2 },
+              { "color": "orange", "size": 1 }
+            ]
+          }
+        ]
+      },
+      {
+        "disallowSameColor": true,
+        "trialDurationMs": 90000,
+        "pegs": [
+          {
+            "name": "A",
+            "disks": [{ "color": "silver", "size": 2 }, { "color": "orange", "size": 1 }],
+            "goal": []
+          },
+          {
+            "name": "B",
+            "disks": [{ "color": "dark", "size": 3 }, { "color": "silver", "size": 3 }],
+            "goal": [{ "color": "dark", "size": 2 }, { "color": "silver", "size": 2 }]
+          },
+          {
+            "name": "C",
+            "disks": [{ "color": "dark", "size": 2 }],
+            "goal": [
+              { "color": "silver", "size": 3 },
+              { "color": "dark", "size": 3 },
+              { "color": "orange", "size": 1 }
+            ]
+          }
+        ]
+      },
+      {
+        "disallowSameColor": true,
+        "trialDurationMs": 90000,
+        "pegs": [
+          {
+            "name": "A",
+            "disks": [{ "color": "silver", "size": 3 }, { "color": "dark", "size": 1 }],
+            "goal": [{ "color": "silver", "size": 2 }]
+          },
+          {
+            "name": "B",
+            "disks": [],
+            "goal": [{ "color": "silver", "size": 3 }, { "color": "orange", "size": 2 }]
+          },
+          {
+            "name": "C",
+            "disks": [
+              { "color": "orange", "size": 3 },
+              { "color": "silver", "size": 2 },
+              { "color": "orange", "size": 2 }
+            ],
+            "goal": [{ "color": "orange", "size": 3 }, { "color": "dark", "size": 1 }]
+          }
+        ]
+      },
+      {
+        "disallowSameColor": true,
+        "trialDurationMs": 90000,
+        "pegs": [
+          {
+            "name": "A",
+            "disks": [{ "color": "dark", "size": 3 }, { "color": "orange", "size": 2 }],
+            "goal": [{ "color": "silver", "size": 2 }, { "color": "orange", "size": 1 }]
+          },
+          {
+            "name": "B",
+            "disks": [{ "color": "silver", "size": 3 }, { "color": "orange", "size": 1 }],
+            "goal": [{ "color": "dark", "size": 3 }, { "color": "orange", "size": 2 }]
+          },
+          {
+            "name": "C",
+            "disks": [{ "color": "silver", "size": 2 }],
+            "goal": [{ "color": "silver", "size": 3 }]
+          }
+        ]
+      }
+    ],
+    "practiceTrials": [
+      {
+        "pegs": [
+          {
+            "name": "A",
+            "disks": [{ "color": "silver", "size": 3 }, { "color": "dark", "size": 1 }],
+            "goal": [{ "color": "silver", "size": 3 }]
+          },
+          {
+            "name": "B",
+            "disks": [],
+            "goal": []
+          },
+          {
+            "name": "C",
+            "disks": [{ "color": "dark", "size": 3 }],
+            "goal": [{ "color": "dark", "size": 3 }, { "color": "dark", "size": 1 }]
+          }
+        ]
+      },
+      {
+        "pegs": [
+          {
+            "name": "A",
+            "disks": [{ "color": "silver", "size": 3 }, { "color": "dark", "size": 1 }],
+            "goal": [{ "color": "silver", "size": 3 }, { "color": "orange", "size": 1 }]
+          },
+          {
+            "name": "B",
+            "disks": [],
+            "goal": []
+          },
+          {
+            "name": "C",
+            "disks": [{ "color": "dark", "size": 3 }, { "color": "orange", "size": 1 }],
+            "goal": [{ "color": "dark", "size": 3 }, { "color": "dark", "size": 1 }]
+          }
+        ]
+      }
+    ]
+  }
