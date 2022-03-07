@@ -9,6 +9,8 @@ public class Tower : MonoBehaviour
     //[System.NonSerialized]
     public List<Disk> goal = new List<Disk>();
 
+    public bool isCorrect; 
+
 
     void Start()
     {
@@ -25,6 +27,8 @@ public class Tower : MonoBehaviour
             }
             PlatesOnTower.Add(gameObject.transform.GetChild(gameObject.transform.childCount - 1).GetComponent<Plate>());
             PlatesOnTower[PlatesOnTower.Count - 1].isOnTop = true;
+            isCorrect = checkIfCorrect();
+
 
         }
         else if ((gameObject.transform.childCount - 2) < PlatesOnTower.Count)
@@ -35,6 +39,26 @@ public class Tower : MonoBehaviour
             {
                 PlatesOnTower[PlatesOnTower.Count - 1].isOnTop = true;
             }
+            isCorrect = checkIfCorrect();
+        }
+    }
+
+    private bool checkIfCorrect()
+    {
+        if (PlatesOnTower.Count == goal.Count)
+        {
+            for (int i = 0; i < goal.Count; i++)
+            {
+                if (goal[i].color != PlatesOnTower[i].colour.ToString())
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+        else
+        {
+            return false;
         }
     }
 }

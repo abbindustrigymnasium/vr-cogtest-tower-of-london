@@ -101,7 +101,16 @@ public class Plate : MonoBehaviour
         if (other.gameObject.CompareTag("TowerCollider") && other.transform.name != gameObject.transform.parent.name) 
         {
             gameObject.transform.SetParent(other.transform, true);
+            if (size != Size.Large)
+            {
             gameObject.transform.localPosition = new Vector3(0, 3, 0);
+
+            }
+            else
+            {
+                gameObject.transform.localPosition = new Vector3(-2.7f, 3, 2.8f);
+
+            }
         }
     }
 

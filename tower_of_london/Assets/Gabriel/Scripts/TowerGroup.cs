@@ -75,7 +75,6 @@ public class TowerGroup : MonoBehaviour
                         newPlate = Instantiate(platePrefabs[-1 + level.pegs[j].disks[i].size * 3], new Vector3(-4 + 4 * j, 2 + i, 0), Quaternion.identity, GameObject.Find(level.pegs[j].tower).transform) as GameObject;
 
                     }
-
                 }
                 if (i == level.pegs[j].disks.Length - 1)
                 {
