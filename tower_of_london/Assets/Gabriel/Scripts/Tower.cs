@@ -7,7 +7,7 @@ public class Tower : MonoBehaviour
     //[System.NonSerialized]
     public List<Plate> PlatesOnTower = new List<Plate>();
     //[System.NonSerialized]
-    public List<Plate> goal = new List<Plate>();
+    public List<Disk> goal = new List<Disk>();
 
 
     void Start()

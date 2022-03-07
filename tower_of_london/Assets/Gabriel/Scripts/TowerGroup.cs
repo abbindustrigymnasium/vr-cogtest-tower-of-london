@@ -83,6 +83,11 @@ public class TowerGroup : MonoBehaviour
                 }
                 GameObject.Find(level.pegs[j].tower).GetComponent<Tower>().PlatesOnTower.Add(newPlate.GetComponent<Plate>());
             }
+            
+            for (int i = 0; i < level.pegs[j].goal.Length; i++)
+            {
+                GameObject.Find(level.pegs[j].tower).GetComponent<Tower>().goal.Add(new Disk(level.pegs[j].goal[i].size, level.pegs[j].goal[i].color));
+            }
         }
     }
 
@@ -129,8 +134,6 @@ public class TowerGroup : MonoBehaviour
             {
                 
                 newPlate = Instantiate(platePrefabs[plates2[i]], new Vector3(-2.7f, 1 + i, 2.8f), Quaternion.identity, GameObject.Find("Tower2").transform) as GameObject;
-                //newPlate.transform.parent = GameObject.Find("Tower2").transform;
-                //newPlate.transform.localPosition = new Vector3(-2.7f, 1 + i, 2.8f);
                 if (i == plates2.Length - 1)
                 {
                     newPlate.GetComponent<Plate>().isOnTop = true;
@@ -141,8 +144,6 @@ public class TowerGroup : MonoBehaviour
             else
             {
                 newPlate = Instantiate(platePrefabs[plates2[i]], new Vector3(0, 2 + i, 0), Quaternion.identity, GameObject.Find("Tower2").transform) as GameObject;
-                //newPlate.transform.parent = GameObject.Find("Tower2").transform;
-                //newPlate.transform.localPosition = new Vector3(0, 2 + i, 0);
                 if (i == plates2.Length - 1)
                 {
                     newPlate.GetComponent<Plate>().isOnTop = true;
@@ -158,8 +159,6 @@ public class TowerGroup : MonoBehaviour
             if (plates3[i] == 0 || plates3[i] == 1 || plates3[i] == 2)
             {
                 newPlate = Instantiate(platePrefabs[plates3[i]], new Vector3(1.3f, 1 + i, 2.8f), Quaternion.identity, GameObject.Find("Tower3").transform) as GameObject;
-                //newPlate.transform.parent = GameObject.Find("Tower3").transform;
-                //newPlate.transform.localPosition = new Vector3(-2.7f, 1 + i, 2.8f);
                 if (i == plates3.Length - 1)
                 {
                     newPlate.GetComponent<Plate>().isOnTop = true;
@@ -170,8 +169,6 @@ public class TowerGroup : MonoBehaviour
             else
             {
                 newPlate = Instantiate(platePrefabs[plates3[i]], new Vector3(4, 2 + i, 0), Quaternion.identity, GameObject.Find("Tower3").transform) as GameObject;
-                //newPlate.transform.parent = GameObject.Find("Tower3").transform;
-                //newPlate.transform.localPosition = new Vector3(0, 2 + i, 0);
                 if (i == plates3.Length - 1)
                 {
                     newPlate.GetComponent<Plate>().isOnTop = true;

@@ -8,4 +8,10 @@ public class Disk
     public string color;
     public int size;
 
+    public Disk(int _size, string _color)
+    {
+        color = _color;
+        size = _size;
+    }
+
 }
