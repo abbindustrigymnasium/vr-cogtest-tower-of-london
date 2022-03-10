@@ -6,17 +6,17 @@ using TMPro;
 
 public class CountDownTimer : MonoBehaviour
 {
-    [SerializeField] float startTime = 5f;
+    //[SerializeField] float startTime = 5f; // Set start time in unity 
     
     [SerializeField] TextMeshProUGUI timerText;
 
-    float timer = 0f;
+    float timer = 5f; // Set start time
     void Start()
     {
         StartCoroutine(Timer());
     }
     private IEnumerator Timer(){
-        timer = startTime;
+        //timer = startTime; // if start time is set in unity
 
         do{
             timer -= Time.deltaTime;
@@ -34,11 +34,7 @@ public class CountDownTimer : MonoBehaviour
         int seconds = (int)(timer % 60);
         int miliseconds = (int)(timer * 1000) % 1000;
 
-        timerText.text = "";
-        //timerText.text += seconds + ":" + miliseconds;
-        //if (days > 0) {timerText.text += days + "d"; }
-        //if (hours > 0) {timerText.text += hours + "h"; }
-        //if (minutes > 0) {timerText.text += minutes + "m"; }
+        timerText.text = ""; // DO NOT REMOVE, fixes spam error 
         if (seconds > 0) {timerText.text += seconds + ":" + miliseconds; }
         if (seconds <= 0 && miliseconds>0) {timerText.text += "0:" +  miliseconds; }
         if (miliseconds <= 0) {timerText.text += "0:" + "000"; }
