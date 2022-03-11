@@ -10,17 +10,21 @@ public class TowerGroup : MonoBehaviour
 
     public Levels levelsInJson;
     public Levels testLevelsInJson;
+
+    public GameObject canvas;
     #endregion
 
     #region Private variables
+    private ShowGoalTowers ShowGoalCanvas;
     #endregion
 
     void Start()
     {
         levelsInJson = JsonUtility.FromJson<Levels>(levelsFile.text);
         testLevelsInJson = JsonUtility.FromJson<Levels>(levelsFile.text);
+         ShowGoalCanvas = canvas.GetComponent<ShowGoalTowers>();
 
-        SpawnPlates(levelsInJson.levels[0]);
+        SpawnPlates(levelsInJson.levels[1]);
     }
 
     // Update is called once per frame
@@ -37,6 +41,8 @@ public class TowerGroup : MonoBehaviour
     void SpawnPlates(Level level)
     {
         GameObject newPlate;
+
+        ShowGoalCanvas.ShowGoal(level);
 
         for (int j = 0; j < level.pegs.Length; j++)
         {
