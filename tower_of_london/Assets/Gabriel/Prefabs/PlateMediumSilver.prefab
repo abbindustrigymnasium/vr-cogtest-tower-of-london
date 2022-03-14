@@ -75,6 +75,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlateMediumSilver
       objectReference: {fileID: 0}
+    - target: {fileID: 2184836900555151871, guid: 69dde3a315e3537408a0015e7c191d37, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2184836900555151871, guid: 69dde3a315e3537408a0015e7c191d37, type: 3}
+      propertyPath: m_TagString
+      value: Plate
+      objectReference: {fileID: 0}
     - target: {fileID: 2548670209328348662, guid: 69dde3a315e3537408a0015e7c191d37, type: 3}
       propertyPath: m_Size.x
       value: 0.70468986
