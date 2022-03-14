@@ -100,16 +100,22 @@ public class Plate : MonoBehaviour
     private void OnTriggerEnter(Collider other) {
         if (other.gameObject.CompareTag("TowerCollider") && other.transform.name != gameObject.transform.parent.name) 
         {
-            gameObject.transform.SetParent(other.transform, true);
+            if (PickAndMove.moving) {
+                PickAndMove.tower_to_check = other.GetComponent<Tower>();
+                return;
+            }
+            PickAndMove.tower_to_check = null;
+            if (PickAndMove.ValidPlacement(gameObject.transform, other.GetComponent<Tower>()))
+            {
+                gameObject.transform.SetParent(other.transform, true);
+            }
             if (size != Size.Large)
             {
-            gameObject.transform.localPosition = new Vector3(0, 3, 0);
-
+                gameObject.transform.localPosition = new Vector3(0, 3, 0);
             }
             else
             {
                 gameObject.transform.localPosition = new Vector3(-2.7f, 3, 2.8f);
-
             }
         }
     }

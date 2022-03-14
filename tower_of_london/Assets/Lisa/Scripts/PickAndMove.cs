@@ -6,10 +6,10 @@ public class PickAndMove : MonoBehaviour
 {
     private float raycastMaxDistance = 100000.0f;
 
-    private static bool moving = false;
-    private Vector3 old_position;
-    private Transform old_parent;
+    public static bool moving = false;
     private Transform target;
+
+    public static Tower tower_to_check = null;
 
     private void Update()
     {
@@ -34,10 +34,10 @@ public class PickAndMove : MonoBehaviour
                 target.position = new Vector3(target.position.x+2, target.position.y, target.position.z);
             } else if (Input.GetKeyDown(KeyCode.UpArrow))
             {
-                target.position = new Vector3(target.position.x, target.position.y+2, target.position.z);
+                target.position = new Vector3(target.position.x, target.position.y+.5f, target.position.z);
             } else if (Input.GetKeyDown(KeyCode.DownArrow))
             {
-                target.position = new Vector3(target.position.x, target.position.y-2, target.position.z);
+                target.position = new Vector3(target.position.x, target.position.y-.5f, target.position.z);
             }
         }
     }
@@ -58,9 +58,6 @@ public class PickAndMove : MonoBehaviour
                     // Lock to mouse position
                     target = hit.transform;
 
-                    old_position = target.position;
-                    old_parent = target.parent;
-
                     moving = true;
 
                     target.GetComponent<Rigidbody>().useGravity = false;
@@ -72,30 +69,35 @@ public class PickAndMove : MonoBehaviour
 
     void Release()
     {
-        // Check if allowed placement
-        if (!ValidPlacement())
+        if (tower_to_check != null)
         {
-            //Return to former position
-            target.parent = old_parent;
-            target.position = old_position;
-        } else
-        {
-            // If allowed snap to drop position
-            target.position = target.parent.position + new Vector3(0, 4, 0);
+            if (PickAndMove.ValidPlacement(target.transform, tower_to_check.GetComponent<Tower>()))
+            {
+                target.SetParent(tower_to_check.transform, true);
+            }
+            if (target.GetComponent<Plate>().size != Plate.Size.Large)
+            {
+                target.localPosition = new Vector3(0, 3, 0);
+            }
+            else
+            {
+                target.localPosition = new Vector3(-2.7f, 3, 2.8f);
+            }
         }
         target.GetComponent<Rigidbody>().useGravity = true;
         target = null;
         moving = false;
     }
 
-    bool ValidPlacement()
+    public static bool ValidPlacement(Transform target, Tower target_tower)
     {
-        Tower target_tower = target.parent.GetComponent<Tower>();
+        
+        // Tower target_tower = target.parent.GetComponent<Tower>();
         
         int count = target_tower.PlatesOnTower.Count;
-        if (count <= 1) return true;
+        if (count < 1) return true;
 
-        Plate.Size target_size = target_tower.PlatesOnTower[count - 2].size;
+        Plate.Size target_size = target_tower.PlatesOnTower[count - 1].size;
         Plate.Size size = target.GetComponent<Plate>().size;
 
         // Check if max amount of disks on tower
@@ -115,11 +117,7 @@ public class PickAndMove : MonoBehaviour
         // Check if colour mode is enabled
             // Check if not same colour
             // Debug.Log(target_tower.PlatesOnTower[count-1].colour);
+        
         return true;
-    }
-
-    bool CheckSize()
-    {
-        return false;
     }
 }
